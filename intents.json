@@ -1,0 +1,101 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "recipe",
+      "patterns": [
+        "How to make herb-crusted pork chops?"
+      ],
+      "responses": [
+        "Preheat the oven to 375°F (190°C).\nIn a small bowl, mix together the chopped thyme, rosemary, oregano, paprika, salt, and pepper.\nPat the pork chops dry with paper towels and season them with the herb mixture on both sides."
+      ]
+    
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "recipe",
+      "patterns": [
+        "Which recipes do you have?",
+        "What kinds of recipes are there?"
+      ],
+      "responses": [
+        "We have Chinese, Chaat, South Indian"
+      ]
+    },
+    {
+      "tag": "Chinese",
+      "patterns": [
+        "Which Chinese recipes do you have?",
+        "What kinds of Chinese recipes are there?"
+      ],
+      "responses": [
+        "We have Manchurian, Hakka Noodles, and Fried Rice"
+      ]
+    },
+    {
+      "tag": "South Indian",
+      "patterns": [
+        "Which South Indian recipes do you have?",
+        "What kinds of South Indian recipes are there?"
+      ],
+      "responses": [
+        "We have Masala Dosa, Idli-Vada-Sambhar, and Uttapam"
+      ]
+    },
+    {
+      "tag": "Chaat",
+      "patterns": [
+        "Which Chaat recipes do you have?",
+        "What kinds of Chaat recipes are there?"
+      ],
+      "responses": [
+        "We have Pani Puri, Dahi Puri, and Bhel"
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison."
+      ]
+    },
+    {
+      "tag": "show_image",
+      "patterns": ["show me the image", "display image", "show picture"],
+      "responses": [""]
+    }
+  ]
+}
