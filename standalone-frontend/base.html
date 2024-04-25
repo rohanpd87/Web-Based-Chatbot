@@ -1,3 +1,4 @@
+<!-- base.html -->
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="style.css">
@@ -5,33 +6,70 @@
 <head>
     <meta charset="UTF-8">
     <title>Chatbot</title>
+    <link rel="shortcut icon" href="logo192.png" type="image/x-icon">
 </head>
 <body>
-<div class="container">
-    <div class="chatbox">
-        <div class="chatbox__support">
-            <div class="chatbox__header">
-                <div class="chatbox__image--header">
-                    <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
-                </div>
-                <div class="chatbox__content--header">
-                    <h4 class="chatbox__heading--header">Chat support</h4>
-                    <p class="chatbox__description--header">Hi. My name is Culin. How can I help you?</p>
-                </div>
-            </div>
-            <div class="chatbox__messages">
-                <div></div>
-            </div>
-            <div class="chatbox__footer">
-                <input type="text" placeholder="Write a message...">
-                <button class="chatbox__send--footer send__button">Send</button>
-            </div>
-        </div>
-        <div class="chatbox__button">
-            <button><img src="./images/chatbox-icon.svg" /></button>
+    
+    <div class="left">
+        <h2>
+            <div style="padding-right: .75em;">
+                <svg width="25" height="25" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path d="M6.053,13L0.667,9.832L4.637,2.835L10.027,5.997L10.03,-0.333L17.97,-0.333L17.973,5.997L23.363,2.835L27.333,9.832L21.947,13L27.333,16.168L23.363,23.165L17.973,20.003L17.97,26.333L10.03,26.333L10.027,20.003L4.637,23.165L0.667,16.168L6.053,13L6.053,13Z" clip-rule="evenodd" fill-rule="evenodd" fill="white"/>
+                </svg>
+            </div>Culinary Creations
+        </h2>
+        <div class="content">
+            <h3 style="font-family: 'Times New Roman', Times, serif;">
+                About Culin: The Culinary Creations Chatbot
+            </h3>
+            <br>
+            <p>
+                Welcome to Culinary Creations, your ultimate destination for culinary inspiration and delightful recipes! At Culinary Creations, we're passionate about bringing the joy of cooking to your fingertips. Whether you're a seasoned chef or a novice in the kitchen, we're here to elevate your culinary journey.
+            </p>
+            <br>
+            <h3 style="font-family: 'Times New Roman', Times, serif;">Features:</h3>
+            <ol style="padding-left: 1.5em;">
+                <li>Get real-time responses to your cooking queries, anytime, anywhere.</li>
+                <li>Discover the secrets behind famous dishes with Culin's ability to generate URLs of popular recipe sites</li>
+                <li>Visualize your culinary creations before cooking with Culin's dish picture generation feature.</li>
+                <li>Experience cooking in action with Culin's YouTube thumbnail generation feature.</li>
+                <li>Get inspired by mouthwatering images of dishes to fuel your cooking creativity.</li>
+            </ol>
         </div>
     </div>
-</div>
+    <div class="right">
+        <div class="r">
+        <span style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: xx-large ;">Click Here to Chat!</span>
+        <img src="001-arrow.png" alt="arrow" class="arrimg">
+        </div>
+    </div>
+    <div class="container">
+        
+        <div class="chatbox">
+            <div class="chatbox__support">
+                <div class="chatbox__header">
+                    <div class="chatbox__image--header">
+                        <img src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png" alt="image">
+                    </div>
+                    <div class="chatbox__content--header">
+                        <h4 class="chatbox__heading--header">Chat support</h4>
+                        <p class="chatbox__description--header">Hi. My name is Culin. How can I help you?</p>
+                    </div>
+                </div>
+                <div class="chatbox__messages">
+                    <div></div>
+                </div>
+                <div class="chatbox__footer">
+                    <input type="text" placeholder="Write a message...">
+                    <button class="chatbox__send--footer send__button">Send</button>
+                    <!-- <button class="chatbox__send--footer speak__button">Speak</button> -->
+                </div>
+            </div>
+            <div class="chatbox__button">
+                <button><img src="./images/chatbox-icon.svg"/></button>
+            </div>
+        </div>
+    </div>
 
     <script src="./app.js"></script>
 

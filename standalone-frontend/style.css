@@ -4,21 +4,65 @@
     padding: 0;
 }
 
+
 .messages__item .timestamp {
     font-size: 10px;
-    color: white;
+    color: black;
     text-align: right;
     display: block;
 }
 
-body {
-    font-family: 'Nunito', sans-serif;
-    font-weight: 400;
-    font-size: 100%;
-    background: #F1F1F1;
+.content p, li{
+    padding-top: 0.5em;
 }
 
-*, html {
+.content{
+    margin-left: 3.5em;
+    padding: 1.5em;
+    text-align: justify;
+    text-justify: inter-word;
+    backdrop-filter: blur(20px);
+    border-radius: 1.5em;
+    /* color: white; */
+    filter: brightness(2);
+}
+.r{
+    padding-left: 120px;
+    display: flex;
+}
+.right{
+    padding-top: 320px;
+    flex: 0.4;
+}
+.arrimg{
+    height: 150px;
+    padding-right: 1.5em;
+    padding-top: 1em;
+}
+.left h2{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2em;
+    margin-left: 2.5em;
+    margin-bottom: 1.5em;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: left;
+    box-sizing: border-box;
+    color: white;
+}
+.left{
+    flex: 0.6;
+}
+body {
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 100%;background-image: url("depositphotos_57444181-Healthy-food-background.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+*, html, .timestamp {
     --primaryGradient: linear-gradient(180deg, #F74F00, #EDB053);
     --secondaryGradient: linear-gradient(0deg, #F74F00, #EDB053);;
     --primaryBoxShadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
@@ -54,12 +98,14 @@ body {
 }
 
 /* BUTTON */
-.chatbox__button {
+.chatbox__button{
     text-align: right;
 }
 
-.send__button {
+/* .send__button, .speak__button { */
+.send__button{
     padding: 9px;
+    width: 20%;
     background: darkred;
     /* border-style: solid; */
     border-color: aliceblue;
@@ -67,7 +113,6 @@ body {
     outline: none;
     cursor: pointer;
 }
-
 
 /* HEADER */
 .chatbox__header {
@@ -154,10 +199,15 @@ body {
 .messages__item {
     margin-top: 5px;
     margin-bottom: 5px;
-    background: seagreen;
+    background: yellowgreen;
     padding: 8px 12px;
-    max-width: 70%;
-    color: white;
+    max-width: 75%;
+    color: black;
+    font-size: 15px;
+}
+
+.messages__item ol {
+    padding-left: 24px;
 }
 
 .messages__item--visitor,
@@ -167,7 +217,7 @@ body {
     border-bottom-right-radius: 20px;
 }
 
-.messages__item--operator {
+.messages__item--operator , .messages__item--operator .timestamp{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -190,7 +240,7 @@ body {
 }
 
 .chatbox__footer input {
-    width: 80%;
+    width: 75%;
     border: none;
     padding: 10px 10px;
     border-radius: 30px;
@@ -205,7 +255,7 @@ body {
 .chatbox__button button:focus,
 .chatbox__button button:visited {
     padding: 10px;
-    background: white;
+    background: orangered;
     border: none;
     outline: none;
     border-top-left-radius: 50px;
