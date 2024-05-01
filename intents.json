@@ -3,13 +3,9 @@
     {
       "tag": "greeting",
       "patterns": [
-        "Hi",
-        "Hey",
-        "Is anyone there?",
-        "Hello"
+        "Hi","Hey","Is anyone there?","Hello"
       ],
       "responses": [
-        "Hey Man! Whatsup :-)",
         "Hi there, what can I do for you?",
         "Hi there, how can I help?"
       ]
@@ -17,8 +13,7 @@
     {
       "tag": "greeting_1",
       "patterns": [
-        "Hi, How are you?",
-        "How are you?"
+        "Hi, How are you?","How are you?"
       ],
       "responses": [
         "I'm fine!",
@@ -36,26 +31,22 @@
     },
     {
       "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!", "No! Thanks!"],
       "responses": ["Happy to help!", "Any time!", "My pleasure"]
     },
     {
       "tag": "recipe",
       "patterns": [
-        "Which recipes do you have?",
-        "What kinds of recipes are there?"
+        "Which recipes do you have?","What kinds of recipes are there?"
       ],
       "responses": [
-        "We have Chinese, Chaat, South Indian"
+        "We have Chinese, Chaat, South Indian, Pizza and more!"
       ]
     },
     {
       "tag": "Chinese",
       "patterns": [
-        "Which Chinese recipes do you have?",
-        "What kinds of Chinese recipes are there?",
-        "What South Indian recipes do you have?",
-        "Can you suggest South Indian dish you have?"
+        "Which Chinese recipes do you have?","What kinds of Chinese recipes are there?","What Chinese recipes do you have?","Can you suggest Chinese dish you have?"
       ],
       "responses": [
         "We have Manchurian, Hakka Noodles, and Fried Rice"
@@ -98,7 +89,7 @@
     {
       "tag": "pani_puri_recipe_steps",
 
-      "patterns": ["steps to make pani puri", "provide me the steps for making pani puri", "show me the steps to make pani puri"],
+      "patterns": ["provide me the steps for making pani puri", "show me the steps to make pani puri"],
       
       "responses": ["<b>&#128073; Steps:</b><br><ol><li>Rinse coriander and mint leaves in water and take all the ingredients of pani.</li><li>Add mint leaves, coriander leaves, green chilli, ginger and lemon juice (lemon juice is added while grinding to prevent the mint leaves from turning dark) in the small chutney jar of a grinder.</li><li>Grind until smooth paste (if required, add 1/4 cup water while grinding).</li><li>Transfer them to a large bowl and add sugar, chaat masala powder, black salt and 4 cups water. Stir with a large spoon and mix it properly. Taste for the salt and add as required. Pani is ready; place it in a refrigerator for at least 1-hour before serving or use it at room temperature. If you like soft boondi, mix it now. If you like crispy taste of boondi then mix it at the time of serving.</li><li>Take mashed potato, kala chana, red chilli powder, cumin-coriander powder, chaat masala powder, coriander leaves and salt (add only if you have not added while boiling the potatoes and chana) in a bowl.</li><li>Mix them together with a spoon. Masala is ready.</li><li>Take each puri and gently make a large hole on its top-middle side with a spoon or your index finger or thumb for stuffing.</li><li>Stuff it with masala (more or less, as you like). Sprinkle onion and sev over it and drizzle a drop of date tamarind chutney over it. Take pani-puri water in a medium bowl. Dip each puri in water and enjoy&hellip;</li></ol>"]
     },
@@ -119,7 +110,7 @@
     {
       "tag": "dry_manchurian_recipe_steps",
 
-      "patterns": ["steps to make dry manchurian", "provide me the steps for making dry manchurian", "show me the steps to make dry manchurian"],
+      "patterns": ["provide me the steps for making dry manchurian", "show me the steps to make dry manchurian"],
       
       "responses": ["<b>&#128073; Steps:</b><br><ol><li>Take a medium size bowl, add grated carrot, grated cabbage, chopped capsicum, chopped green chilli and spring onion followed by 1 teaspoon oil, pepper powder, maida, cornflour and salt.</li><li>Mix all ingredients properly. Prepare small round balls from the mix. Do not add water in the mix for making balls, as water released by vegetables will be enough to bind them. In case mix does not bind properly and small balls cannot be made, add some water in the mixture.</li><li>Grind until smooth paste (if required, add 1/4 cup water while grinding).</li><li>Heat cooking oil in a pan. When oil is hot enough to deep fry, add and deep fry raw balls on medium flame until they turn golden brown.</li><li>Drain oil from cooked balls and transfer to plate having paper towel spread on it (to remove excess oil from deep fried veg balls)</li><li>Heat 2 tablespoons oil in a wok (wide mouthed, thin-bottomed pan) on high flame. Add diced onion, diced capsicum, green chilli, chopped ginger and chopped garlic and saut&eacute; for 2-3 minutes or until they become slightly tender.</li><li>Add soy sauce, tomato ketchup, chilli sauce and salt; mix well.</li><li>Add fried manchurian balls and spring onion. Toss and cook on high flame for 1-2 minutes.</li><li>Best dry vegetable manchurian is ready.</li></ol>"]
     },
@@ -141,7 +132,7 @@
     {
       "tag": "gulab_jamun_recipe_steps",
 
-      "patterns": ["steps to make gulab jamun", "provide me the steps for making gulab jamun", "show me the steps to make gulab jamun"],
+      "patterns": ["provide me the steps for making gulab jamun", "show me the steps to make gulab jamun"],
       
       "responses": ["<ol><li>Take 1&frac12; cups sugar, 4 green cardamom pods, 8-10 saffron strands and 2&frac12; cups water in a deep pan.</li><li>Stir until sugar dissolves and bring it to boil over medium flame. When it comes to rolling boil, reduce flame to low and cook it until syrup turns little sticky, it will take around 10-12 minutes. When syrup is ready, turn off the flame.</li><li>Take a 100gms pack of Gits Gulab Jamun Ready Mix. (You can use any brand of ready mix.)</li><li>Open the packet and transfer its content to a wide mouthed bowl.</li><li>Sprinkle 3 tablespoons of milk evenly over it.</li><li>Mix it together gently using your hand. Do not worry if mixture turns sticky.</li><li>Knead the mixture into smooth and soft dough. If mixture turns dry, add few tablespoons of milk and knead again.</li><li>Prepare the dry fruit and saffron stuffing. Take chopped pistachio and saffron strands in a small plate. This is an optional process and you can skip this.</li><li>Divide dough into 18-20 equal sized small portions. Take one portion and make a round shaped ball from it (Grease your palms with ghee or oil to prevent dough from sticking to your skin while making balls). Press it a little between your palms and give it a flat pattie like shape as shown in the picture. Put a 5-6 pieces of chopped pistachio and a strand of saffron in the center.</li><li>Fold together edges such that it wraps the filling around it and make a round shaped ball from it.  Make sure that ball has smooth surface.</li><li>Make remaining balls in a same way. Cover the balls with wet cloth while you are making balls from remaining dough portions to prevent them from drying.</li><li>While you are making the balls, take oil/ghee in a deep frying pan and put it to heat over medium flame so that when you are done preparing balls, oil will be almost ready for deep frying them. Before proceeding to deep fry them, check whether oil/ghee is hot enough for deep frying-drop a small portion of mixture in oil and if it comes on the surface immediately without changing the color, oil/ghee is ready. If it turns brown immediately then oil is too hot and you need to reduce the heat to let to cool a bit, if it drops to the bottom, you need to heat it a bit longer. Add 3-4 balls in hot oil from the side and deep fry them over medium-low flame, stir occasionally to get even golden brown color on all sides. If required, increase or decrease the flame to low or medium to maintain the even temperature and deep fry evenly.</li><li>Drain jamuns using slotted spoon and transfer them over kitchen napkin on a plate. Let them cool for 4-5 minutes before adding them to sugar syrup. As you can see in the picture, the size of the the jamuns increases after deep frying. Deep fry the remaining balls.</li><li>Warm the sugar syrup by heating it over medium flame for around 4-5 minutes. Turn off the flame and add deep fried jamuns in it and keep them in syrup for at least 1-2 hours before serving. In photo you can see how the size of jamuns deep fried in the first batch has increased compared to the ones deep fried in the second batch (two small jamuns near top of the photo are from second batch).</li><li>Gulab Jamun with ready mix can now ready for serving. Serve it warm or put them in the refrigerator and serve chilled.</li></ol>"]
     },
@@ -163,7 +154,7 @@
     {
       "tag": "pizza_recipe_steps",
 
-      "patterns": ["steps to make pizza", "provide me the steps for making pizza", "show me the steps to make pizza"],
+      "patterns": ["provide me the steps for making pizza", "show me the steps to make pizza"],
       
       "responses": ["<b>&#128073; Steps:</b><br><ol><li><b>Prepare the Pizza Dough:</b></li><ul><li>In a large mixing bowl, combine the flour, instant yeast, sugar, and salt.</li><li>Make a well in the center and add olive oil and lukewarm water.</li><li>Mix until a dough forms.</li><li>Transfer the dough to a floured surface and knead for about 5-7 minutes until it becomes smooth and elastic.</li><li>Place the dough in a greased bowl, cover it with a clean kitchen towel, and let it rise in a warm place for about 1 hour or until doubled in size.</li></ul><li><b>Prepare the Pizza Toppings:</b></li><ul><li>While the dough is rising, prepare the toppings.</li><li>Heat a little olive oil in a pan over medium heat.</li><li>Add the paneer cubes and saut&eacute; until lightly browned on all sides. Remove from the pan and set aside.</li><liIn the same pan, saut&eacute; the sliced bell pepper and onion until they are slightly softened. Set aside.></li></ul><li><b>Assemble the Pizza:</b></li><ul><li>Preheat your oven to 220°C (425°F).</li><li>Punch down the risen dough and transfer it to a floured surface.</li><li>Roll out the dough into a round shape to fit your pizza pan or baking tray.</li><li>Transfer the rolled-out dough to the greased pizza pan or baking tray.</li><li>Spread pizza sauce evenly over the dough, leaving a small border around the edges.</li><li>Sprinkle half of the shredded mozzarella cheese over the sauce.</li><li>Arrange the saut&eacute;ed paneer cubes, bell pepper, onion, and tomato slices evenly over the cheese.</li><li>Sprinkle the remaining shredded mozzarella cheese over the toppings.</li><li>Season with dried oregano, dried basil, red chili flakes (if using), salt, and pepper according to your taste.</li></ul><li><b>Bake the Pizza:</b></li><ul><li>Place the pizza in the preheated oven and bake for 15-20 minutes, or until the crust is golden brown and the cheese is melted and bubbly.</li><li>Once done, remove the pizza from the oven and let it cool slightly before slicing.</li><li>Serve hot and enjoy your homemade paneer cheese pizza!</li></ul></ol>"]
     },
@@ -176,8 +167,11 @@
         "Do you know a joke?"
       ],
       "responses": [
-        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
-        "What did the buffalo say when his son left for college? Bison."
+        "Where can you learn the most challenging ice cream recipes? Sundae high school.",
+        "What do you name a simple computer file containing pastry recipes? Byte-sized.",
+        "What do you call a monster made of pasta? The Pasta-fficer.",
+        "What's orange and sounds like a parrot? A carrot.",
+        "Why did the coffee file a police report? It got mugged."
       ]
     },
     {
@@ -203,33 +197,51 @@
     },
     {
       "tag": "URL_south_indian",
-      "patterns": ["other links for South Indian dish", "other sites for South Indian dish"],
+      "patterns": ["other links for South Indian dish", "other sites for South Indian dish", "other urls for South Indian dish"],
       "responses": [""]
     },
     {
       "tag": "URL_chaat",
-      "patterns": ["other links for Chaat dish", "other sites for Chaat dish"],
+      "patterns": ["other links for Chaat dish", "other sites for Chaat dish", "other urls for Chaat dish"],
       "responses": [""]
     },
     {
       "tag": "URL_chinese",
-      "patterns": ["other links for Chinese dish", "other sites for Chinese dish"],
+      "patterns": ["other links for Chinese dish", "other sites for Chinese dish", "other urls for Chinese dish"],
       "responses": [""]
     },
     {
       "tag": "youtube_url_chaat",
       
-      "patterns": ["other youtube links for Pani Puri", "other sites for Pani Puri", "suggest any youtube link for pani puri", "suggest the best youtube link for pani puri"],
+      "patterns": ["other youtube links for Pani Puri", "videos for Pani Puri", "suggest any youtube link for pani puri", "suggest the best youtube video for pani puri"],
       
-      "responses": [""]
+      "responses": [
+      "<b>Here are some YouTube videos you're asking for...</b><br><iframe width=100% height='200' src='https://www.youtube.com/embed/tkHCAiQgdL8' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe><br>",
+      "<b>Here are some YouTube videos you're asking for...</b><br><iframe width=100% height='200' src='https://www.youtube.com/embed/yOobLm_Urpc' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe><br>"]
     },
     {
       "tag": "youtube_url_Pizza",
       
-      "patterns": ["other youtube links for paneer pizza", "other sites for paneer pizza", "suggest any youtube link for paneer pizza", "suggest the best youtube link for paneer pizza"],
+      "patterns": ["other youtube links for paneer pizza", "videoes for paneer pizza", "suggest any youtube link for paneer pizza", "suggest the best youtube video for paneer pizza"],
       
-      "responses": [""]
+      "responses": [
+      "<b>Here are some YouTube videos you're asking for...</b><br><iframe width=100% height='200' src='https://www.youtube.com/embed/iODYdP8Z6tQ' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe><br>",
+      "<b>Here are some YouTube videos you're asking for...</b><br><iframe width=100% height='200' src='https://www.youtube.com/embed/PK0czgdbHoY' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe><br>",
+      "<b>Here are some YouTube videos you're asking for...</b><br><iframe width=100% height='200' src='https://www.youtube.com/embed/x0a6LvH5Kog' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe><br>"
+      ]
     },
+    {
+      "tag": "url_pasta",
+      
+      "patterns": ["recommend the most recommended italian pasta recipe", "suggest famous italian pasta", "suggest the most watched youtube video for italian pasta"],
+      
+      "responses": [
+        "<b>Here are the YouTube video you're asking for...</b><br><iframe width=100% height='200' src='https://www.youtube.com/embed/t4-hG_WcrF0' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe><br>",
+        "<b>Here are the YouTube video you're asking for...</b><br><iframe width=100% height='200' src='https://www.youtube.com/embed/gEYcNs9QenI' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe><br>",
+        "<b>Here are the YouTube video you're asking for...</b><br><iframe width=100% height='200' src='https://www.youtube.com/embed/yhhXG4jAHQw' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe><br>"
+      ]
+    },
+    
     {
       "tag": "OK",
       "patterns": ["OK"],

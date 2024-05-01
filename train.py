@@ -67,8 +67,9 @@ learning_rate = 0.001
 input_size = len(X_train[0])
 hidden_size = 8
 output_size = len(tags)
-print(input_size, output_size)
+print("Stemmed Words:",input_size,"\nTags:",output_size)
 
+# create a new dset
 class ChatDataset(Dataset):
 
     def __init__(self):
@@ -192,4 +193,4 @@ if __name__ == "__main__":
             break
 
         resp = get_response_with_tts(sentence)
-        print(resp)
+        print("Culin: ",resp)

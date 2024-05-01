@@ -1,3 +1,4 @@
+//app.js
 class Chatbox {
     constructor() {
         this.args = {
@@ -63,7 +64,7 @@ class Chatbox {
         let tag = "";
         let image = "";
         let urls = []; // Modify to store multiple URLs
-        let youtubeLinks = [];
+        // let youtubeLinks = [];
         
         if (text1.toLowerCase().includes("look") && text1.toLowerCase().includes("gulab jamun")) {
             tag = "show_image_gul_jam_color";
@@ -81,23 +82,23 @@ class Chatbox {
             tag = "show_image_dosa_masala";
             image = "./Potato_Masala_dosa.jpg"; // Image path for recipe-related requests
         }
-        if ((text1.toLowerCase().includes("links") || text1.toLowerCase().includes("sites")) && text1.toLowerCase().includes("south") && text1.toLowerCase().includes("indian")) {
+        if ((text1.toLowerCase().includes("link") || text1.toLowerCase().includes("url") || text1.toLowerCase().includes("site")) && text1.toLowerCase().includes("south") && text1.toLowerCase().includes("indian")) {
             tag = "URL_south_indian";
             urls.push(
                 { name: "Dosa", url: "https://www.indianhealthyrecipes.com/dosa-recipe-dosa-batter/" },
                 { name: "Uttapam", url: "https://www.indianhealthyrecipes.com/uttapam-recipe-uthappam/" },
                 { name: "Idli-Sambhar", url: "http://localhost:3000/" }
-            ); // Add multiple URLs with names
+            );
         }
-        if ((text1.toLowerCase().includes("links") || text1.toLowerCase().includes("sites")) && text1.toLowerCase().includes("chaat")) {
+        if ((text1.toLowerCase().includes("link") || text1.toLowerCase().includes("url") || text1.toLowerCase().includes("site")) && text1.toLowerCase().includes("chaat")) {
             tag = "URL_chaat";
             urls.push(
                 { name: "Pani Puri", url: "https://foodviva.com/snacks-recipes/pani-puri/" },
                 { name: "Dahi Puri", url: "https://foodviva.com/snacks-recipes/dahi-puri/" },
                 { name: "Bhel", url: "https://foodviva.com/snacks-recipes/bhel-puri-recipe/" }
-            ); // Add multiple URLs with names
+            );
         }
-        if ((text1.toLowerCase().includes("link") || text1.toLowerCase().includes("site") || text1.toLowerCase().includes("Hakka")
+        if ((text1.toLowerCase().includes("link") || text1.toLowerCase().includes("url") || text1.toLowerCase().includes("site") || text1.toLowerCase().includes("Hakka")
         || text1.toLowerCase().includes("Schezwan")|| text1.toLowerCase().includes("Manchurian")) && text1.toLowerCase().includes("chinese")) 
         {
             tag = "URL_chinese";
@@ -105,20 +106,20 @@ class Chatbox {
                 { name: "Manchurian", url: "http://localhost:3000/" },
                 { name: "Hakka Noodles", url: "http://localhost:3000/" },
                 { name: "Fried Rice", url: "http://localhost:3000/" }
-            ); // Add multiple URLs with names
-        }
-        if ((text1.toLowerCase().includes("youtube") || text1.toLowerCase().includes("video") || text1.toLowerCase().includes("suggest")) && text1.toLowerCase().includes("pani puri")) {
-            tag = "youtube_url_chaat";
-            youtubeLinks.push(
-                { name: "Pani Puri Recipe", url: "https://www.youtube.com/embed/yOobLm_Urpc" }
             );
         }
-        if ((text1.toLowerCase().includes("youtube") || text1.toLowerCase().includes("video") || text1.toLowerCase().includes("suggest")) && text1.toLowerCase().includes("paneer pizza")) {
-            tag = "youtube_url_pizza";
-            youtubeLinks.push(
-                { name: "Paneer Pizza Recipe", url: "https://www.youtube.com/embed/iODYdP8Z6tQ"}
-            );
-        }
+        // if ((text1.toLowerCase().includes("youtube") || text1.toLowerCase().includes("video") || text1.toLowerCase().includes("suggest")) && text1.toLowerCase().includes("pani puri")) {
+        //     tag = "youtube_url_chaat";
+        //     youtubeLinks.push(
+        //         { name: "Pani Puri Recipe", url: "https://www.youtube.com/embed/yOobLm_Urpc" }
+        //     );
+        // }
+        // if ((text1.toLowerCase().includes("youtube") || text1.toLowerCase().includes("video") || text1.toLowerCase().includes("suggest")) && text1.toLowerCase().includes("pizza")) {
+        //     tag = "youtube_url_pizza";
+        //     youtubeLinks.push(
+        //         { name: "Paneer Pizza Recipe", url: "https://www.youtube.com/embed/iODYdP8Z6tQ"}
+        //     );
+        // }
     
         fetch('http://127.0.0.1:5000/predict', {
             method: 'POST',
@@ -131,13 +132,14 @@ class Chatbox {
         .then(r => r.json())
         .then(r => {
             let msg2;
-            if (youtubeLinks.length > 0) {
-                let youtubeHTML = "<b>Here are some YouTube videos you're asking for...</b><br>";
-                youtubeLinks.forEach((item, index) => {
-                    youtubeHTML += `<iframe width=100% height="200" src="${item.url}" frameborder="0" allow="accelerometer; border-radius: 5px; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>`;
-                });
-                msg2 = { name: "Culin", message: youtubeHTML, tag: tag, image: image, timestamp: new Date().toISOString() };
-            } else if (urls.length > 0) {
+            // if (youtubeLinks.length > 0) {
+            //     let youtubeHTML = "<b>Here are some YouTube videos you're asking for...</b><br>";
+            //     youtubeLinks.forEach((item, index) => {
+            //         youtubeHTML += `<iframe width=100% height="200" src="${item.url}" frameborder="0" allow="accelerometer; border-radius: 5px; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>`;
+            //     });
+            //     msg2 = { name: "Culin", message: youtubeHTML, tag: tag, image: image, timestamp: new Date().toISOString() };
+            // }
+            if (urls.length > 0) {
                 // If there are multiple URLs, construct the message accordingly
                 let urlsHTML = "<b>Here are some URLs of popular dishes:</b><br>";
                 urls.forEach((item, index) => {
