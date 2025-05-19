@@ -1,2 +1,2 @@
 # Web-Based-Chatbot
- Here, User can visit and ask with the Chatbot ragarding recipes
+Here, User can visit and ask with the Chatbot ragarding recipes. Right Now, we have Pani Puri, Dahi Puri, and Bhel in chaat; Manchurian, Hakka Noodles, and Fried Rice in chinese. <b>Features:</b><br><ol><li>An AI-based project specifically designed to help users who want to learn recipes easily.</li><li>A timestamp is added to each message.</li><li>It also gives the picture as a reply from the chatbot when the user asks to display a picture.</li></ol><br><img src='/Screenshot Recipe Chatbot Culin 1.jpg' alt='GJ' width=100%>
